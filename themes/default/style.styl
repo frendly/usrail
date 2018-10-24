@@ -1,0 +1,80 @@
+// global vars
+$baseColor = #fff
+$menuColor = #9ba8b0
+$menuColorActive = #1a1a18
+$baseBg = #1a1a18
+// #9ba8b0 h2
+
+// import blocks
+@import './style/*'
+
+// global styles
+html, body
+	padding 0
+	margin 0
+	background-color $baseBg
+	font-family 'Coda'
+	font-size 21px
+	line-height 27px
+	color $baseColor
+
+.bold
+	font-weight 900
+	line-height 29px
+
+p
+	margin 0 0 10px
+
+header
+	display flex
+	align-items flex-end
+	background-color #fff
+	padding 47px 110px 40px 80px
+
+.logo
+	background-image url('/logo.svg')
+	width 280px
+	height 45px
+	// hide text
+	overflow hidden
+	text-indent -9999px
+
+section
+	&.bg-promo
+		height 610px
+		background-image url('./resources/bg-top.png')
+		background-repeat no-repeat
+		background-size cover
+
+.format1
+	width 960px
+	margin 0 auto
+
+.format2
+	width 1060px
+	margin 0 auto
+//
+.wrapper
+	display flex
+	justify-content space-between
+
+.min-offset
+	margin-left 80px
+
+// about company
+.section--1
+	margin-top 100px
+	margin-bottom 170px
+
+	.text--1
+		width 50%
+
+	.text--2
+		width 50%
+		margin-top auto
+		margin-left 95px
+
+	.text--3
+		margin-top 35px
+		width 50%
+// end about company

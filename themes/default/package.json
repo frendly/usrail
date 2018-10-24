@@ -1,0 +1,9 @@
+{
+	"name": "cogear-theme-default",
+	"description": "",
+	"version": "1.0.1",
+	"author": "",
+	"repository": "https://github.com/codemotion/cogear-theme-default",
+	"homepage": "https://cogearjs.org",
+	"license": "MIT"
+}
