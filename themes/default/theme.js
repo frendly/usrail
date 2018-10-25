@@ -1,5 +1,5 @@
-// console.log("Default theme is loaded")
 import tippy from './js/tippy.all.min.js';
+import './js/button-top.js';
 import './style.styl';
 
 tippy.setDefaults({

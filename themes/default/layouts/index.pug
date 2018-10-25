@@ -6,7 +6,7 @@ head
 	include ../blocks/favicon
 	block head
 body
-	header
+	header#top
 		a.logo(href="/") US Rail
 		include ../blocks/menu
 
@@ -14,3 +14,4 @@ body
 		!= content
 	
 	include ../blocks/footer
+	a#button-top(href="#top") Go to Top
