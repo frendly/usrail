@@ -2,6 +2,9 @@
   height 180px
   background #fff
   color #1a1a18
+  +mobile()
+    padding 20px 0
+    height auto
 
   .partners__list
     display flex
@@ -12,15 +15,24 @@
     // margin 0
     // margin-left 80px
     list-style none
+    +mobile()
+      flex-direction column
   
   .like-h1
     margin 0
     
   .wabtec
-    width 225px
+    max-width 225px
+    width 100%
+    +mobile()
+      margin 10px 0
 
   .trinityrail
-    width 315px
+    max-width 315px
+    width 100%
+    +mobile()
+      margin 10px 0
+    
 
   img
     width 100%

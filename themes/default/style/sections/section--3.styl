@@ -4,14 +4,23 @@
 	h1
 		margin-left 160px
 		margin-bottom 55px
+		+mobile()
+			margin-left 0
+			margin-top 0
+			margin-bottom 20px
 
 	.text--1
 		width 375px
+		+mobile()
+			margin-bottom 20px
 
 	.graph
 		margin-top -15px
 		margin-left 33px
 		flex 1
+		+mobile()
+			margin-top 0
+			margin-left 0
 
 	.graph-list
 		padding 0
@@ -19,12 +28,24 @@
 
 		.description
 			color #9ba8b0
+			+mobile()
+				margin-bottom 10px
 
 		.bar
 			background-image linear-gradient(to right, #1a1a18, #282826, #363635, #454544, #555554)
 			align-self normal
 			margin-left 60px
 			margin-right 15px
+			+mobile()
+				margin-left 0
+				height 55px
+				// width 100% !important
+
+		.value
+			+mobile()
+				position absolute
+				top 70%
+				transform translateY(-50%)
 
 		&__item
 			display flex
@@ -34,19 +55,32 @@
 			font-family 'Iceland'
 			font-size 40px
 			line-height 27px
+			+mobile()
+				display block
+				height auto
+				margin-bottom 50px
+				position relative
 
 			&--1
 				.bar
 					width 290px
+					+mobile()
+						width calc(100% / (400/260))
 			&--2
 				.bar
 					width 320px
+					+mobile()
+						width calc(100% / (400/290))
 			&--3
 				.bar
 					width 370px
+					+mobile()
+						width calc(100% / (400/340))
 			&--4
 				.bar
 					width 405px
+					+mobile()
+						width calc(100% / (400/400))
 
 	.description-list
 		list-style none
@@ -58,8 +92,12 @@
 
 		li + li
 			margin-top 25px
+			+mobile()
+				margin-top 0
 
 	.source
 		margin-top 20px
 		font-size 14px
 		line-height 18px
+		+mobile()
+			margin-top 0

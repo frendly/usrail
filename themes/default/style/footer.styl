@@ -1,8 +1,13 @@
 footer
-  width 1020px
+  max-width 1020px
+  width 100%
   margin auto
   height 115px
   font-size 19px
+  +mobile()
+    height auto
+    padding 25px
+    box-sizing border-box
 
   ul
     display: flex
@@ -12,6 +17,8 @@ footer
     justify-content space-between
     align-items center
     height 100%
+    +mobile()
+      flex-wrap wrap
 
   a,
   span
@@ -30,3 +37,5 @@ footer
     font-size 21px
     font-weight 900
     line-height 27px
+    +mobile()
+      margin-top 20px

@@ -1,6 +1,8 @@
 h1, h2, h3, h4, h5, h6
   font-family 'Coda'
   font-weight 900
+  +mobile()
+    text-align center
 
 h1,
 .like-h1
@@ -8,11 +10,16 @@ h1,
   font-weight 900
   line-height 48px
   margin-bottom 30px
+  +mobile()
+    font-size 39px
+    margin-top 0
 
   small
     font-size 31px
     font-weight 400
     margin-left 10px
+    +mobile()
+      display block
 
 h2,
 .like-h2
@@ -21,3 +28,5 @@ h2,
   color #9ba8b0
   margin-top 0
   margin-bottom 45px
+  +mobile()
+    margin-bottom 20px

@@ -2,6 +2,7 @@ import tippy from './js/tippy.all.min.js';
 import './js/button-top.js';
 import './style.styl';
 import carringOffset from './js/carring-offset';
+import mobileMenu from './js/mobile-menu';
 
 tippy.setDefaults({
   arrow: true,
@@ -14,4 +15,5 @@ tippy.setDefaults({
 
 document.addEventListener("DOMContentLoaded", function() {
   carringOffset();
+  mobileMenu();
 });

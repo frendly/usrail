@@ -1,8 +1,17 @@
+// products
 #products
 	padding-top 100px
+	+mobile()
+		padding-top 20px
 
 article
 	background-image linear-gradient(to right bottom, #535352, #444443, #353534, #272725, #1a1a18)
+	+mobile()
+		margin-bottom 40px !important
+		padding 0 !important
+	
+	.text
+		margin-top 40px
 
 	button
 		width 25px
@@ -13,13 +22,49 @@ article
 		position absolute
 		outline 0
 		cursor pointer
+		+mobile()
+			position static
+			display flex
+			position: static;
+			width: 100%;
+			height: auto;
+			background none
+			color: transparent;
+			text-align: left
+			padding 0
+			margin-bottom 10px
+			&:before
+				content "•"
+				color: #fff;
+				margin-top: 3px;
+				font-size 10px
+
+			&:after
+				content attr(data-tippy)
+				// display block
+				color #fff
+				font-size 20px
 
 	.product-wrapper
-		width 470px
+		max-width 470px
+		width 100%
 		position relative
 	
 	.product__image
 		position absolute
+		+mobile()
+			position static
+			width 100% !important
+			height auto !important
+
+		// &:after
+		// 	content ""
+		// 	position absolute
+		// 	bottom -80px
+		// 	left 0
+		// 	width 497px
+		// 	height 80px
+		// 	background-image url(/images/products/products-shadow.png)
 
 	img
 		width 100%
@@ -100,3 +145,7 @@ article
 		.button--3
 			bottom 105px
 			left 110px
+
+		.button--4
+				bottom 10px
+				right 20px

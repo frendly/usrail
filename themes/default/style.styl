@@ -3,10 +3,14 @@ $baseColor = #fff
 $menuColor = #9ba8b0
 $menuColorActive = #1a1a18
 $baseBg = #1a1a18
-// #9ba8b0 h2
+
+mobile()
+	@media (max-width: 640px)
+		{block}
+
 
 // import blocks
-@import './style/*'
+@import './style/**/*'
 
 // global styles
 html, body
@@ -25,12 +29,18 @@ html, body
 
 p
 	margin 0 0 10px
+	+mobile()
+		margin-bottom 20px
 
 header
 	display flex
 	align-items flex-end
 	background-color #fff
 	padding 47px 110px 20px 80px
+	+mobile()
+		position relative
+		flex-direction row-reverse
+		padding 40px 45px 35px
 
 .logo
 	background-image url('/images/logo.svg')
@@ -48,36 +58,38 @@ section
 		background-image url('/images/bg-top.png')
 		background-repeat no-repeat
 		background-size cover
+		+mobile()
+			display none
 
 .format1
-	width 960px
+	max-width 960px
+	width 100%
 	margin 0 auto
+	+mobile()
+		padding 10px
+		box-sizing border-box
 
 .format2
-	width 1060px
+	max-width 1060px
+	width 100%
 	margin 0 auto
+	+mobile()
+		padding 10px
+		box-sizing border-box
 //
 .wrapper
 	display flex
 	justify-content space-between
+	+mobile()
+			flex-wrap wrap
 
 .min-offset
 	margin-left 80px
+	+mobile()
+			margin-left 0
 
-// about company
-.section--1
-	padding-top 100px
-	margin-bottom 70px
-
-	.text--1
-		width 50%
-
-	.text--2
-		width 50%
-		margin-top auto
-		margin-left 95px
-
-	.text--3
-		margin-top 35px
-		width 50%
-// end about company
+.text
+	+mobile()
+		width 100% !important
+		margin-left 0 !important
+		margin-right 0 !important

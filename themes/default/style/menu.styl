@@ -1,5 +1,13 @@
 nav
   margin-left auto
+  +mobile()
+    &:after
+      content "☰"
+      font-size 50px
+      color #000
+  
+  .active
+    display flex
 
   ul
     display flex
@@ -7,6 +15,17 @@ nav
     margin 0
     padding 0
     width 755px // ???
+    +mobile()
+      display none
+      flex-direction: column;
+      width: auto;
+      position absolute
+      left: 0;
+      right: 0;
+      background: #fff;
+      top: 120px;
+      padding: 45px;
+      padding-top: 0;
 
   li
     list-style none
@@ -17,6 +36,9 @@ nav
     color $menuColor
     text-decoration none
     text-transform uppercase
+    +mobile()
+      font-size 30px
+      line-height 49px
     
     &:hover
     .active

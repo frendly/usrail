@@ -10,6 +10,8 @@
     align-items end
     display flex
     margin-bottom 30px
+    +mobile()
+      width 100%
 
   img
     margin-top auto
@@ -22,6 +24,8 @@
     padding 0
     margin 0
     margin-bottom 100px
+    +mobile()
+      margin-bottom 0
 
     li
       // width 240px
@@ -31,12 +35,20 @@
       flex-direction column
       box-sizing border-box
       // padding-right 30px
+      +mobile()
+        width 50%
+        padding 0 15px
+        text-align center
 
     .title
       min-height 100px
       display flex
       align-items flex-end
       margin-bottom 15px
+      +mobile()
+        display block
+        min-height auto
+        margin-bottom 0
     
     .nubmer
       font-family 'Iceland'
@@ -47,11 +59,13 @@
     .value
       color #9ba8b0
       margin-left auto
+      +mobile()
+        margin-left 0 !important
 // .carrying__list
 
   //
   .carrying__list + .wrapper
-    width 700px
+    max-width 700px
     margin auto
 
     ul
@@ -67,3 +81,8 @@
 
       .figures
         color #9ba8b0
+  
+  .more
+    +mobile()
+      text-align center
+      margin 20px 0 !important
