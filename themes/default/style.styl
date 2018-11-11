@@ -5,7 +5,7 @@ $menuColorActive = #1a1a18
 $baseBg = #1a1a18
 
 mobile()
-	@media (max-width: 640px)
+	@media (max-width: 768px)
 		{block}
 
 
@@ -38,9 +38,10 @@ header
 	background-color #fff
 	padding 47px 110px 20px 80px
 	+mobile()
+		justify-content space-between
 		position relative
 		flex-direction row-reverse
-		padding 40px 45px 35px
+		padding: 40px 20px 35px;
 
 .logo
 	background-image url('/images/logo.svg')
@@ -51,6 +52,8 @@ header
 	// hide text
 	overflow hidden
 	text-indent -9999px
+	+mobile()
+		max-width: 60%;
 
 section
 	&.bg-promo

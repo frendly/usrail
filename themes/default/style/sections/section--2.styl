@@ -1,6 +1,7 @@
 // products
 #products
 	padding-top 100px
+	overflow hidden
 	+mobile()
 		padding-top 20px
 
@@ -49,6 +50,8 @@ article
 		max-width 470px
 		width 100%
 		position relative
+		+mobile()
+			max-width 100% !important
 	
 	.product__image
 		position absolute
@@ -78,7 +81,7 @@ article
 			margin-left auto
 		
 		.product__image
-			width 723px
+			max-width 723px
 			height 350px
 			left -500px
 			top -270px
@@ -105,7 +108,7 @@ article
 			margin-right auto
 
 			.product__image
-				width 778px
+				max-width 778px
 				top -165px
 				right -580px
 
@@ -132,7 +135,7 @@ article
 		.product__image
 			top -125px
 			left -500px
-			width 439px
+			max-width 439px
 
 		.button--1
 			top 90px

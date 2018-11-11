@@ -1,9 +1,10 @@
 nav
   margin-left auto
   +mobile()
+    margin-left 0
     &:after
       content "☰"
-      font-size 50px
+      font-size 40px
       color #000
   
   .active
@@ -24,8 +25,7 @@ nav
       right: 0;
       background: #fff;
       top: 120px;
-      padding: 45px;
-      padding-top: 0;
+      text-align center
 
   li
     list-style none

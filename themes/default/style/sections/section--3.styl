@@ -11,7 +11,9 @@
 
 	.text--1
 		width 375px
+		padding: 0 10px
 		+mobile()
+			padding 0
 			margin-bottom 20px
 
 	.graph
@@ -25,6 +27,8 @@
 	.graph-list
 		padding 0
 		margin 0
+		+mobile()
+			max-width: 600px
 
 		.description
 			color #9ba8b0
