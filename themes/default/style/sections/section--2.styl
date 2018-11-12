@@ -23,28 +23,8 @@ article
 		position absolute
 		outline 0
 		cursor pointer
-		+mobile()
-			position static
-			display flex
-			position: static;
-			width: 100%;
-			height: auto;
-			background none
-			color: transparent;
-			text-align: left
-			padding 0
-			margin-bottom 10px
-			&:before
-				content "•"
-				color: #fff;
-				margin-top: 3px;
-				font-size 10px
-
-			&:after
-				content attr(data-tippy)
-				// display block
-				color #fff
-				font-size 20px
+		text-indent: -9999px;
+		overflow: hidden;
 
 	.product-wrapper
 		max-width 470px
@@ -56,19 +36,11 @@ article
 	.product__image
 		position absolute
 		+mobile()
-			position static
+			position relative
+			top 0 !important
+			left 0 !important
 			width 100% !important
 			height auto !important
-
-		// &:after
-		// 	content ""
-		// 	position absolute
-		// 	bottom -80px
-		// 	left 0
-		// 	width 497px
-		// 	height 80px
-		// 	background-image url(/images/products/products-shadow.png)
-
 	img
 		width 100%
 
@@ -89,14 +61,23 @@ article
 			.button--1
 				top 95px
 				left 270px
+				+mobile()
+					top: -10px;
+					left: 280px;
 
 			.button--2
 				top 95px
 				left 555px
+				+mobile()
+					top: 100px;
+					left: 20px;
 			
 			.button--3
 				bottom 52px
 				left 350px
+				+mobile()
+					bottom: 10px;
+					left: 150px;
 
 	
 	&.product--2
@@ -115,11 +96,17 @@ article
 		.button--1
 			top 130px
 			right 225px
+			+mobile()
+				top: 0;
+				left: 10px;
 
 		.button--2
 			left 230px
 			top 135px
-		
+			+mobile()
+				left: 200px;
+				top: 160px;
+
 		.button--3
 			bottom 75px
 			left 305px
@@ -144,6 +131,9 @@ article
 		.button--2
 			left 340px
 			top 85px
+			+mobile()
+				top: -10px;
+				left: 200px;
 
 		.button--3
 			bottom 105px

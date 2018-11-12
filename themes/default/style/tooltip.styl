@@ -11,11 +11,8 @@
 	border-radius 0
 
 	.tippy-arrow
-		border-left 8px solid rgba(255,255,255,.85)
 		border-top 8px solid transparent
 		border-bottom 8px solid transparent
-		right -9px
-
 		&:after
 			content: ""
 			position: absolute
@@ -24,4 +21,20 @@
 			border-left 7px solid #1a1a1a
 			border-top 7px solid transparent
 			border-bottom 7px solid transparent
+
+.tippy-popper[x-placement^='left'] .tippy-arrow
+	border-left 8px solid rgba(255,255,255,.85)
+	right -9px
+
+	&:after
+		left -9px
+		border-left 7px solid #1a1a1a
+
+.tippy-popper[x-placement^='right'] .tippy-arrow
+	border-right 8px solid rgba(255,255,255,.85)
+	left -9px
+
+	&:after
+		right: -9px;
+		border-right 7px solid #1a1a1a
 
