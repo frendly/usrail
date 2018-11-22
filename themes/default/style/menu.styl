@@ -1,6 +1,6 @@
 nav
   margin-left auto
-  +mobile()
+  +mobileMenu()
     margin-left 0
     &:after
       content "☰"
@@ -16,7 +16,7 @@ nav
     margin 0
     padding 0
     width 755px // ???
-    +mobile()
+    +mobileMenu()
       display none
       flex-direction: column;
       width: auto;
@@ -36,7 +36,7 @@ nav
     color $menuColor
     text-decoration none
     text-transform uppercase
-    +mobile()
+    +mobileMenu()
       font-size 30px
       line-height 49px
     
