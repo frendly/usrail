@@ -1,4 +1,4 @@
-nav
+.menu
   margin-left auto
   +mobileMenu()
     margin-left 0
@@ -6,11 +6,8 @@ nav
       content "☰"
       font-size 40px
       color #000
-  
-  .active
-    display flex
 
-  ul
+  &__list
     display flex
     justify-content space-between
     margin 0
@@ -27,10 +24,13 @@ nav
       top: 120px;
       text-align center
 
-  li
+    &--open
+      display flex
+
+  &__item
     list-style none
 
-  a
+  &__link
     font-family 'Iceland'
     font-size 19px
     color $menuColor
@@ -41,5 +41,4 @@ nav
       line-height 49px
     
     &:hover
-    .active
       color $menuColorActive

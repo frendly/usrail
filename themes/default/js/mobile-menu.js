@@ -2,9 +2,8 @@
 
 export default function() {
 
-  const menuButton = document.querySelector('nav');
-  const menu = menuButton.querySelector('ul');
+  const menuButton = document.querySelector('.menu');
+  const menu = menuButton.querySelector('.menu__list');
 
-  menuButton.addEventListener("click", () => menu.classList.toggle('active') );
-
+  menuButton.addEventListener("click", () => menu.classList.toggle('menu__list--open') );
 }

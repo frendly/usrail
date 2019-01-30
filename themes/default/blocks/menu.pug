@@ -7,11 +7,8 @@
     'contacts': '#contacts',
   };
 
-nav
-  ul
+nav.menu
+  ul.menu__list
     each val, key in menu
-      li
-        if selected === key
-          a.selected(href=val, title=key)= key
-        else
-          a(href=val, title=key)= key
+      li.menu__item
+        a.menu__link(href=val, title=key)= key
