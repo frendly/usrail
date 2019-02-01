@@ -1,4 +1,4 @@
-public/
+# public/
 .htaccess
 .htpasswd
 deploy.yaml
