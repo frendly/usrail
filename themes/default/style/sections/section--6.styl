@@ -1,40 +1,28 @@
-// partners
 .section--6
-  height 180px
-  background #fff
-  color #1a1a18
-  +mobile()
-    padding 20px 10px
-    height auto
+  padding 50px 0
 
-  .partners__list
+.team
+  list-style none
+  padding 0
+  margin-top 40px
+
+  &__item
     display flex
-    align-items center
-    justify-content space-between
-    height 100%
-    padding 0
-    // margin 0
-    // margin-left 80px
-    list-style none
+    flex-wrap wrap
+    background #333
+    padding-top 10px
     +mobile()
-      flex-direction column
-      align-items unset
+      padding 20px 10px
+
+    & + &
+      margin-top 40px
+    
+    &:hover
+      opacity .9
   
-  .like-h1
-    margin 0
-    
-  .wabtec
-    max-width 225px
-    width 100%
-    +mobile()
-      margin 10px 0
+  // &__content
+  &__name
+    margin-top 20px
 
-  .trinityrail
-    max-width 315px
-    width 100%
-    +mobile()
-      margin 10px 0
-    
-
-  img
-    width 100%
+  &__image
+    margin-right 20px
